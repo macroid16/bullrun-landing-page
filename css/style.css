@@ -1,0 +1,294 @@
+
+
+/* Navbar */
+.navbar-brand {
+    font: 32px Viga;
+}
+
+
+
+.jumbotron {
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 540px;
+    position: relative;
+    z-index: -1;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    bottom: 0;
+}
+
+.jumbotron .container {
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron .display-4 {
+    font-weight: 200;
+    font-size: 2.6em;
+    margin-top: 100px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+}
+
+
+
+/* Info Panel */
+.info-panel {
+    background-color: rgb(250, 250, 250);
+    padding: 30px;
+    margin-top: -120px;
+    border-radius: 12px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+}
+
+.info-panel h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.info-panel p {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #0f0101;
+
+}
+
+
+
+/* Workingspace */
+.workingspace {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.workingspace img {
+    margin-bottom: 20px;
+}
+
+.workingspace h2 {
+    font-size: 52px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.workingspace h2 span {
+    font-weight: 500;
+}
+
+.workingspace p {
+    font-size: 18px;
+    color: #0f0101;
+    font-weight: 200;
+}
+
+
+
+
+
+/* Utility */
+.tombol {
+    border-radius: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+#download{
+    background-color: #e7e4ec;
+    display: flex;
+    /* width: 90%; */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 135px auto;
+    padding: 57px 0 57px 57px;
+    align-items: center;
+    border-radius: 30px;
+    /* margin: 5rem 0; */
+  }
+  
+  
+  #download-text h1{
+   
+   font-size: 40px;
+   align-items: center;
+  }
+
+  
+#oppor-right{
+  margin-left: 3rem;
+ 
+  
+  /* border: 2px solid salmon; */
+}
+
+#right-card{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+#right-card div{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  -webkit-box-shadow: -1px 4px 28px 0px rgb(231, 231, 231);
+  -moz-box-shadow: -1px 4px 28px 0px rgb(231, 231, 231);
+  box-shadow: -1px 4px 28px 0px rgb(231, 231, 231);
+  border-radius: 20px;
+  padding: 1rem;
+  
+}
+
+#right-card div h3{
+  font-size: 20px;
+  text-align: center;
+}
+#right-card div:hover {
+  -webkit-box-shadow: -1px 4px 28px 0px rgb(231, 231, 231);
+  -moz-box-shadow: -1px 4px 28px 0px rgb(231, 231, 231);
+  box-shadow: -1px 4px 28px 0px rgb(185, 181, 181);
+  border-radius: 20px;
+}
+#right-card div .fi{
+  width: 100px;
+}
+
+#right-card div:hover .fi{
+  background-color: #bdcde2;
+}
+
+#right-card div .fi{
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  -webkit-box-shadow: -1px 4px 28px 0px rgb(231, 231, 231);
+  -moz-box-shadow: -1px 4px 28px 0px rgb(231, 231, 231);
+  box-shadow: -1px 4px 28px 0px rgb(185, 181, 181);
+ 
+}
+
+
+#tokenomics-main{
+    display: flex;
+    flex-direction: column;
+    
+   
+  }
+  
+  #tokenomics-main h1{
+    
+    font-size: 32px;
+  margin-bottom:2rem ;
+  
+  }
+  
+  #tokenomics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #tokenomics-text ul li{
+   font-size: 20px;
+   padding: 0.5rem 0;
+  }
+
+  #tokenomics-img{
+    display: flex;
+    justify-content: space-around;
+   }
+
+  footer{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f1f1f1;
+    
+  }
+
+  footer li{
+    list-style: none;
+    font-size: 30px;
+  }
+
+  footer li a{
+    text-decoration: none;
+  }
+
+
+
+  
+
+/* RESPONSIVE */
+@media (min-width: 992px) {
+    .navbar {
+        padding-top: 20px;
+    }
+    
+    .navbar-brand, .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        margin-right: 20px;
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #00080a;
+        margin: auto;
+        margin-bottom: -8px;
+        width: 50%;
+        padding-top: 5px;
+    }
+
+
+    .jumbotron {
+        margin-top: -90px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 5em;
+        margin-top: 150px;
+    }
+
+
+    .workingspace {
+        text-align: left;
+    }
+
+
+    .testimonial p {
+        font-size: 2em;
+    }
+
+}
